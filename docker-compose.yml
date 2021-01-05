@@ -14,8 +14,6 @@ services:
       RAILS_ENV: production
       DATABASE_URL: postgres://postgres@db
       RAILS_MAIN_DB: indahouse_nas_dghTmmjy6LPhV4lkNTwF
-    volumes:
-      - .:/
     ports:
       - "3000:3000"
     depends_on:
