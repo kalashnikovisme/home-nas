@@ -76,7 +76,7 @@ jobs:
           context: ./nginx 
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ushamandya/simplewhale:latest
+          tags: indahouse_nas_nginx
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       -
