@@ -74,6 +74,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./nginx 
+          file: ./nginx/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: indahouse_nas_nginx
