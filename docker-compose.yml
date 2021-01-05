@@ -7,7 +7,7 @@ services:
       - ./tmp/db:/var/lib/postgresql/data
 
   backend:
-    build: ./rails
+    build: ./
     links:
       - db
     environment:
