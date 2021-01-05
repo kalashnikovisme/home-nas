@@ -5,10 +5,10 @@ default: &default
 
 development:
   <<: *default
-  database: indahouse_nas_development
+  database: tramway_pro_development
 test:
   <<: *default
-  database: indahouse_nas_test
+  database: tramway_pro_test
 production:
   <<: *default
-  database: indahouse_nas_production
+  database: tramway_pro_production
