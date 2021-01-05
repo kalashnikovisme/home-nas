@@ -1,0 +1,7 @@
+{
+  "name": "indahouse_nas",
+  "private": true,
+  "dependencies": {
+    "lightgallery.js": "latest"
+  }
+}

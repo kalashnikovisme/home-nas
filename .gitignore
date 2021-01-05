@@ -1,0 +1,16 @@
+/.bundle
+
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
+
+.byebug_history
+/public/system
+/public/uploads
+/public/assets
+/config/secrets.yml
+.env
