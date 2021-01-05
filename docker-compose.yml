@@ -34,4 +34,4 @@ services:
 
 networks:
   nas:
-    driver: brigde
+    driver: bridge
