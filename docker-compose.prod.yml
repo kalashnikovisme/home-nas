@@ -1,0 +1,29 @@
+version: "3.6"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+
+  backend:
+    build: ./rails
+    links:
+      - db
+    environment:
+      RAILS_ENV: production
+      DATABASE_URL: postgres://postgres@db
+      RAILS_MAIN_DB: indahouse_nas_dghTmmjy6LPhV4lkNTwF
+    volumes:
+      - .:/
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  nginx:
+    build: ./nginx
+    depends_on:
+      - backend
+    ports:
+      - 8000:80
